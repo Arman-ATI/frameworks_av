@@ -59,6 +59,10 @@
 #define ALOGVV(...) ((void)0)
 #endif
 
+#ifdef USES_OPLUS_CAMERA
+#define CAMERA_PACKAGE_NAME "com.oplus.packageName"
+#endif
+
 // Convenience macro for transient errors
 #define CLOGE(fmt, ...) ALOGE("Camera %s: %s: " fmt, mId.c_str(), __FUNCTION__, \
             ##__VA_ARGS__)
